@@ -6,7 +6,7 @@ A simple React.js product display app showcasing a grid of products with reusabl
 
 ## Screenshot
 
-![Screenshot](./screenshot.png)
+![Screenshot](.src/screenshot.png)
 
 ---
 
@@ -14,7 +14,6 @@ A simple React.js product display app showcasing a grid of products with reusabl
 
 - Display products in a card layout
 - Modular component-based structure
-- Responsive styling with CSS Flexbox
 - Data managed through reusable `Data.js` file
 
 ---
