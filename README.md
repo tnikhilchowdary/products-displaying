@@ -6,7 +6,7 @@ A simple React.js product display app showcasing a grid of products with reusabl
 
 ## Screenshot
 
-![Screenshot](.src/screenshot.png)
+![Screenshot](./src/screenshot.png)
 
 ---
 
