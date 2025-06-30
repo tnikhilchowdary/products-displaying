@@ -1,15 +1,14 @@
-import '../App.css';
-import React from "react";
+import react from "react";
+import './ProductCards.css'; 
 
-
-
-const ProductsCard = ({ image, name, price, description }) => {
+const ProductsCard = ({ product }) => {
+  const { id, image, name, description, price } = product;
   return (
     <div className="card">
-      <img src={image} alt={name} className="product-image" />
-      <h2>{name}</h2>
-      <p className="price">${price}</p>
-      <p className="desc">{description}</p>
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
+      <h3>${price}</h3>
+      <p>{description}</p>
     </div>
   );
 };

@@ -1,26 +1,18 @@
-// src/App.js
-import React from 'react';
-import ProductsCard from './components/ProductsCard';
-import products from './components/Data';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
+  const [search, setSearch] = useState("");
   return (
     <div className="App">
-      <h1>Our Products</h1>
-      <div className="product-grid">
-        {products.map((product) => (
-          <ProductsCard
-            key={product.id}
-            image={product.image}
-            name={product.name}
-            price={product.price}
-            description={product.description}
-          />
-        ))}
-      </div>
+      <h1></h1>
+      <Navbar search={search} setSearch={setSearch} />
+      <Home search={search} />
     </div>
   );
 }
 
 export default App;
+
